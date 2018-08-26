@@ -20,3 +20,6 @@ when a old program "oldCode.py" is changed use these: -
 $ git status
 $ git commit -m "second commit" oldCode.py
 $ git push -u origin master
+
+To get latest chnages
+$ git pull
