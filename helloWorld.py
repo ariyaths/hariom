@@ -1,4 +1,5 @@
 import time
+import math
 
 print('hello world')
 time.sleep(2)
@@ -15,3 +16,10 @@ time.sleep(2)
 print('print(11 ** 2) =', 11 ** 2)
 time.sleep(2)
 print('print(11 // 2) =', 11 // 2)
+
+print(math.ceil(2.888888))
+print(math.floor(2.888888))
+print(math.pow(2,3))
+print(math.pi)
+print(math.tau)
+print('tom said to me that,"i will see you later"')
