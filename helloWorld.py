@@ -40,4 +40,5 @@ print('x,x.upper()', x,x.upper(),
     "1234".isdigit())
     #om namah shivaya
     #hariom
+    #cruise missile
 
