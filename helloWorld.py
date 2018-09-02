@@ -30,8 +30,12 @@ x = "Happy Birthday"
 print(x.lower())
 print(x)
 x = x.lower()
-print(x)
-print(x.upper())
-print(x.capitalize())
-print(x.title())
-print(x.islower())
+print(x,x.upper(),
+    x.capitalize(),
+    x.title(),
+    x.islower(),
+    x.isupper(),
+    x.isalpha(),
+    "qwerty".isalpha(),
+    "1234".isdigit())
+
