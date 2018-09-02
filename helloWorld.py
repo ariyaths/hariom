@@ -38,6 +38,9 @@ print('x,x.upper()', x,x.upper(),
     'x.isalpha()',x.isalpha(),
     "qwerty".isalpha(),
     "1234".isdigit()
+<<<<<<< HEAD
     #harihara
+=======
+>>>>>>> adccaaa609200572476b20c7f053428de4c6fac9
     )
 
