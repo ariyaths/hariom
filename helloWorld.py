@@ -1,44 +1,34 @@
 import time
 import math
 
-print('hello world')
-time.sleep(1)
-print('print(11 + 2) =', 11 + 2)
-time.sleep(1)
-print('print(11 - 2) =', 11 - 2)
-time.sleep(1)
-print('print(11 * 2) =', 11 * 2)
-time.sleep(1)
-print('print(11 / 2) =', 11 / 2)
-time.sleep(1)
-print('print(11 % 2) =', 11 % 2)
-time.sleep(1)
-print('print(11 ** 2) =', 11 ** 2)
-time.sleep(1)
-print('print(11 // 2) =', 11 // 2)
-
-print(math.ceil(2.888888))
-print(math.floor(2.888888))
-print(math.pow(2,3))
-time.sleep(1)
-print(math.pi)
-print(math.tau)
-print('tom said to me that,"i will see you later"')
-print("hi i am {}".format("name"))
-print("Happy Birthday".count("a"))
+print('hello world');time.sleep(1)
+print('print(11 + 2) = ', 11 + 2);time.sleep(1)
+print('print(11 - 2) = ', 11 - 2);time.sleep(1)
+print('print(11 * 2) = ', 11 * 2);time.sleep(1)
+print('print(11 / 2) = ', 11 / 2);time.sleep(1)
+print('print(11 % 2) = ', 11 % 2);time.sleep(1)
+print('print(11 ** 2) = ', 11 ** 2);time.sleep(1)
+print('print(11 // 2) = ', 11 // 2);time.sleep(1)
+print('math.ceil(2.888888) = ',math.ceil(2.888888));time.sleep(1)
+print('math.floor(2.888888) = ',math.floor(2.888888));time.sleep(1)
+print('math.pow(2,3) = ',math.pow(2,3));time.sleep(1)
+print('math.pi = ',math.pi);time.sleep(1)
+print('math.tau = ',math.tau);time.sleep(1)
+print('tom said to me that,"i will see you later"');time.sleep(1)
+print("hi i am {}".format("name"));time.sleep(1)
+print("Happy Birthday".count("a"));time.sleep(1)
 x = "Happy Birthday"
-print(x.lower())
-print(x)
+print('x.lower() = ',x.lower());time.sleep(1)
+print('x = ',x);time.sleep(1)
 x = x.lower()
-print('x,x.upper()', x,x.upper(),
-    'x.capitalize()',x.capitalize(),
-    'x.title()',x.title(),
-    'x.islower()',x.islower(),
-    'x.isupper()',x.isupper(),
-    'x.isalpha()',x.isalpha(),
-    "qwerty".isalpha(),
-    "1234".isdigit())
-    #om namah shivaya
-    #hariom
-    #los palmos bomb
-
+print('x,x.upper() = ', x,x.upper());time.sleep(1)
+print('x.capitalize() = ',x.capitalize());time.sleep(1)
+print('x.title() = ',x.title());time.sleep(1)
+print('x.islower() = ',x.islower());time.sleep(1)
+print('x.isupper() = ',x.isupper());time.sleep(1)
+print('x.isalpha() = ',x.isalpha());time.sleep(1)
+print('"qwerty".isalpha() = ',"qwerty".isalpha());time.sleep(1)
+print('"1234".isdigit() = ',"1234".isdigit());time.sleep(1)
+y = "bohemian"
+print('y.index("o") = ',y.index("o"));time.sleep(1)
+print("y.find('rjufrufur') = ",y.find('rjufrufur'));time.sleep(1)
