@@ -29,6 +29,13 @@ print('x.isupper() = ',x.isupper());time.sleep(1)
 print('x.isalpha() = ',x.isalpha());time.sleep(1)
 print('"qwerty".isalpha() = ',"qwerty".isalpha());time.sleep(1)
 print('"1234".isdigit() = ',"1234".isdigit());time.sleep(1)
-y = "bohemian"
-print('y.index("o") = ',y.index("o"));time.sleep(1)
-print("y.find('rjufrufur') = ",y.find('rjufrufur'));time.sleep(1)
+x = "bohemian"
+print('x.index("o") = ',x.index("o"));time.sleep(1)
+print('x.find("rjufrufur") = ',x.find('rjufrufur'));time.sleep(1)
+print('x.find("O") = ',x.find("O"));time.sleep(1)
+print('x.find("o") = ',x.find("o"));time.sleep(1)
+name = input("What is your name?")
+print('len(name) = ',len(name));time.sleep(1)
+name = input("What is your name?").strip()
+print('len(name) = ',len(name));time.sleep(1)
+
