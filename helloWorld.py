@@ -41,7 +41,6 @@ print('len(name) = ',len(name));time.sleep(0.1)
 name2 = input("What is your name ?")
 age = 46
 print("Your name is {} and age is {}".format(name2, age))
-
 name3 = input("What is your name ?")
 age2 = input("What is your age ?")
 size = input("What is your size?")
@@ -57,10 +56,24 @@ var = "hello"
 print(var[::-1]);time.sleep(0.1)
 #input the email of user
 email = input("enter your email ID ?")
-#siddhant4000@gmail.com
+#harihara.nair@gmail.com
 #slice the name from the input email
 username = email[:email.index("@"):]
 domain = email[email.index("@") + 1:email.index(".com"):]
 #print info of user
 print("Hey your name is {} and your email domain is {}".format(username, domain));time.sleep(0.1)
+#booling
+print(True);time.sleep(0.1)
+print(False);time.sleep(0.1)
+a = True
+print(a = True);time.sleep(0.1)
+print("type (a)",type (a));time.sleep(0.1)
+a2 = "True"
+print(a2 = "True");time.sleep(0.1)
+print("type (a2) = ",type (a2));time.sleep(0.1)
+print("3 > 4 = ",3 > 4);time.sleep(0.1)
+print("4 > 3 = ",4 > 3);time.sleep(0.1)
+print("3 == 4 = ",3 == 4);time.sleep(0.1)
+print("45 != 4 = ",45 != 4);time.sleep(0.1)
+print("3 <= 4 = ",3 <= 4);time.sleep(0.1)
 
