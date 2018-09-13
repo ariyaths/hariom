@@ -76,4 +76,22 @@ print("4 > 3 = ",4 > 3);time.sleep(0.1)
 print("3 == 4 = ",3 == 4);time.sleep(0.1)
 print("45 != 4 = ",45 != 4);time.sleep(0.1)
 print("3 <= 4 = ",3 <= 4);time.sleep(0.1)
+#if and else commands
+num1 = 2
+num2 = 3
+if num1 < num2:
+    print("num1 is smaller");time.sleep(0.1)
+else :
+    print("num2 is smaller");time.sleep(0.1)
+weather = "Sunny"
+if (weather == "Sunny"):
+    print("weather is pleasant");time.sleep(0.1)
+    print("it is a bit hot outside");time.sleep(0.1)
+    print("feels like a good time to go to a sandy beach and have fun");time.sleep(0.1)
+elif (weather == Winter):
+    print("weather is unpleasant");time.sleep(0.1)
+    print("it is a lot cold outside");time.sleep(0.1)
+    print("feels like a good time to go outside and play snowball fights");time.sleep(0.1)
+else :
+    print("uknown");time.sleep(0.1)
 
