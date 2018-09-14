@@ -1,5 +1,6 @@
 import time
 import math
+import pandas
 
 def printStatements1():
     print('hello world');time.sleep(0.1)
@@ -100,27 +101,39 @@ def printStatements2():
     else :
         print("uknown");time.sleep(0.1)
 
-def video15(x,y):
+def video14video16(x,y):
+    # #video14
     not True
     not False
     #x = 3
     #y = 4
     if not x > y:
-        print("it worked")
+        print("it worked");time.sleep(0.1)
     num3 = 3
     num4 = 4
     num5 = 1
     if (bool(num3 > 7) ^ bool(num4 == 4)):
-        print("it is true")
+        print("it is true");time.sleep(0.1)
     else: 
-        print("it is false")
-
+        print("it is false");time.sleep(0.1)
+    # #video15
     while num5 <= 10:
-        print("Omkar is awesome")
+        print("legends of awesomeness");time.sleep(0.1)
+        print("sweet!");time.sleep(0.1)
         num5 += 1
     L = []
-    while(len(L)) >3
-    
+    while(len(L) < 3):
+        new_name = input("What is your name?").strip().capitalize()
+        L.append(new_name)
+    print(L);time.sleep(0.1)
+    print ("list is full");time.sleep(0.1)
+    # #video16
+    for i in range(5):
+        print(i)
+    for i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        print(i)
+
 #printStatements1()
+#myInputTests()
 #printStatements2()
-video15(3,4)
+#video14video16(3,4)
