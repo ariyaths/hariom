@@ -100,5 +100,25 @@ def printStatements2():
     else :
         print("uknown");time.sleep(0.1)
 
-printStatements1()
-printStatements2()
+def video15(x,y):
+    not True
+    not False
+    #x = 3
+    #y = 4
+    if not x > y:
+        print("it worked")
+    num3 = 3
+    num4 = 4
+    num5 = 1
+    if (bool(num3 > 7) ^ bool(num4 == 4)):
+        print("it is true")
+    else: 
+        print("it is false")
+
+    while num5 <= 10:
+        print("Omkar is awesome")
+        num5 += 1
+    
+#printStatements1()
+#printStatements2()
+video15(3,4)
