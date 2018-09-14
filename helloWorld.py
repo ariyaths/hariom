@@ -118,6 +118,8 @@ def video15(x,y):
     while num5 <= 10:
         print("Omkar is awesome")
         num5 += 1
+    L = []
+    while(len(L)) >3
     
 #printStatements1()
 #printStatements2()
