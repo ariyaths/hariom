@@ -133,7 +133,33 @@ def video14video16(x,y):
     for i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
         print(i)
 
+def video17video19():
+    # #video17
+    our_list = [1, 4, 5, 3, 53, 4]
+    print("our_list = ", our_list, "\n");time.sleep(0.1)
+    new_list = ["A", "B", "C", 1, 2, 3, 4, True, False]
+    print("new_list = ", new_list, "\n");time.sleep(0.1)
+    print("new_list[3] = ", new_list[3]);time.sleep(0.1)
+    print("new_list[6] = ", new_list[6]);time.sleep(0.1)
+    print("new_list[-3] = ", new_list[-3]);time.sleep(0.1)
+    print("new_list[3:6:] = ", new_list[3:6:]);time.sleep(0.1)
+    print("new_list[3:6] = ", new_list[3:6]);time.sleep(0.1)
+    print("new_list[3:] = ", new_list[3:]);time.sleep(0.1)
+    print("new_list[6::] = ", new_list[6::], "\n");time.sleep(0.1)
+    our_list2 = [1, 2, [3, 4, 5], [6, 7]]
+    print("our_list2[2] = ", our_list2[2]);time.sleep(0.1)
+    print("our_list2[2][1] = ", our_list2[2][1]);time.sleep(0.1)
+    print("our_list2[3][1] = ", our_list2[3][1]);time.sleep(0.1)
+    print('our_list2.append("new item") = ', our_list2.append("new item"));time.sleep(0.1)
+    print("our_list2 = ", our_list2);time.sleep(0.1)
+    print("our_list2.pop() = ", our_list2.pop());time.sleep(0.1)
+    print("our_list2 = ", our_list2);time.sleep(0.1)
+    print("our_list2.pop(1) = ", our_list2.pop(1));time.sleep(0.1)
+    print("our_list2 = ", our_list2);time.sleep(0.1)
+    print("len(our_list2) = ", len(our_list2));time.sleep(0.1)
+
 #printStatements1()
 #myInputTests()
 #printStatements2()
 #video14video16(3,4)
+video17video19()
