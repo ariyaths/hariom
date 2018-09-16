@@ -156,10 +156,51 @@ def video17video19():
     print("our_list2 = ", our_list2);time.sleep(0.1)
     print("our_list2.pop(1) = ", our_list2.pop(1));time.sleep(0.1)
     print("our_list2 = ", our_list2);time.sleep(0.1)
-    print("len(our_list2) = ", len(our_list2));time.sleep(0.1)
+    print("len(our_list2) = ", len(our_list2), "\n");time.sleep(0.1)
+    # #video18
+    employee = {}
+    print("employee = ", employee);time.sleep(0.1)
+    employees = {
+        "Mary" : 24,
+        "Gru" : 40,
+        "Dan" : 43,
+        "Ciara" : 30
+    }
+    print("employees = ", employees);time.sleep(0.1)
+    print('employees["Marry"] = ', employees["Mary"]);time.sleep(0.1)
+    print("employees['Ciara'] = ", employees['Ciara']);time.sleep(0.1)
+    employees['Ham'] = 23
+    print("employees = ", employees);time.sleep(0.1)
+    employees['Gru'] = 41
+    print("employees = ", employees);time.sleep(0.1)
+    del employees['Dan']
+    print("employees = ", employees);time.sleep(0.1)
+    print("employees.keys() = ", employees.keys());time.sleep(0.1)
+    a = list(employees.keys())
+    print("a = ", a);time.sleep(0.1)
+    print("a[0] = ", a[0]);time.sleep(0.1)
+    print("employees.values() = ", employees.values());time.sleep(0.1)
+    print("employees.items() = ", employees.items());time.sleep(0.1)
+    # #video19
+    dic = {}
+    s = input()
+    for s in s:
+        dic[s] = dic.get(s, 0) + 1
+    print("\n" .join(['%s,%s' %(k,v) for k,v in dic.items()]))
+
+def video20video22():
+    # #video20
+    def add(x,y):
+        return x + y
+    x = add(x = 5, y = 6)
+    print(x);time.sleep(0.1)
+    def rev(text):
+        print(text[::-1]);time.sleep(0.1)
+    rev("Harihara and Omkar")
 
 #printStatements1()
 #myInputTests()
 #printStatements2()
 #video14video16(3,4)
-video17video19()
+#video17video19()
+video20video22()
