@@ -197,6 +197,13 @@ def video20video22():
     def rev(text):
         print(text[::-1]);time.sleep(0.1)
     rev("Harihara and Omkar")
+    # #video21
+    def info(name, age, likes = "javascript"):
+        detail = "I am {}. I am {} years old and I like {}.".format(name, age, likes)
+        print("detail = ", detail)
+    info("Harihara", 11, "python")
+    # #video22
+    ###very important chapter
 
 #printStatements1()
 #myInputTests()
