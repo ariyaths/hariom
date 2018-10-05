@@ -198,12 +198,29 @@ def video20video22():
         print(text[::-1]);time.sleep(0.1)
     rev("Harihara and Omkar")
     # #video21
-    def info(name, age, likes = "javascript"):
+    def info(name, age, likes = "java"):
         detail = "I am {}. I am {} years old and I like {}.".format(name, age, likes)
         print("detail = ", detail)
     info("Harihara", 11, "python")
     # #video22
     ###very important chapter
+    ###must for making a game
+    print("1, 2, 3, 4, 5 = ", 1, 2, 3, 4, 5)
+    number2 = [1, 2, 3, 4, 5]
+    print("number2 = ", number2)
+    print("*number2 = ", *number2)
+    print(("number2 = ", number2))
+    def add2(*num):
+        total = 0
+        for numb in num:
+            total += numb
+        return total
+    print(add2(9, 8, 7, 6, 5, 4, 3, 2, 1, 987654321, 1234567890))
+    def about(**kwargs):
+        for key,value in kwargs.items():
+            print("{} is {}".format(key,value))
+    about(Python = "Easy", Java = "Difficult")
+    print([ (a, b) for a in range(3) for b in range(a) ])
 
 #printStatements1()
 #myInputTests()
