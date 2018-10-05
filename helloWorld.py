@@ -222,9 +222,20 @@ def video20video22():
     about(Python = "Easy", Java = "Difficult")
     print([ (a, b) for a in range(3) for b in range(a) ])
 
+def stuffIfound():
+    ###found from google python
+    print("Found this stuff from google python");time.sleep(0.1)
+    xyz = [5, 1, 4, 3]
+    print("    xyz = ", xyz);time.sleep(0.1)
+    print("    sorted(xyz) = ", sorted(xyz));time.sleep(0.1)
+    strs = ['aa', 'BB', 'zz', 'CC']
+    print ("    sorted(strs)", sorted(strs));time.sleep(0.1) ##(case sensitive)
+    print ("    sorted(strs, reverse = True)", sorted(strs, reverse = True));time.sleep(0.1)
+
 #printStatements1()
 #myInputTests()
 #printStatements2()
 #video14video16(3,4)
 #video17video19()
-video20video22()
+#video20video22()
+stuffIfound()
