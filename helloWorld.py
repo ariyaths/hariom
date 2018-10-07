@@ -243,6 +243,17 @@ def stuffIfound():
         return s[-1]
     ## Now pass key=MyFn to sorted() to sort by the last letter:
     print ("sorted(strs3, key = MyFn) = ", sorted(strs3, key = MyFn));time.sleep(0.1)
+    print (type(type(int)))
+    def decision(): 
+        if (round(0.1 + 0.2,10) == round(3/10,10)): return True
+        else: return False
+    print (decision())
+    def decision2(): 
+        return ("Hari" if (round(1/10 + 2/10,10) == round(0.3,10)) else "Om")
+    print (decision2())
+    print(True if (round(0.33333 + 0.66666,5) == round(0.99999,5)) else False)  #false H:true
+    print(True if (round(1/3 + 2/3,5) == round(0.999999,5)) else False)  #false H:true
+    print(True if (round(1/3 + 2/3,5) == round(1,5)) else False)  #true H:false
 
 #printStatements1()
 #myInputTests()
