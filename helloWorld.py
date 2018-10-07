@@ -226,11 +226,23 @@ def stuffIfound():
     ###found from google python
     print("Found this stuff from google python");time.sleep(0.1)
     xyz = [5, 1, 4, 3]
-    print("    xyz = ", xyz);time.sleep(0.1)
-    print("    sorted(xyz) = ", sorted(xyz));time.sleep(0.1)
+    print("xyz = ", xyz);time.sleep(0.1)
+    print("sorted(xyz) = ", sorted(xyz));time.sleep(0.1)
     strs = ['aa', 'BB', 'zz', 'CC']
-    print ("    sorted(strs)", sorted(strs));time.sleep(0.1) ##(case sensitive)
-    print ("    sorted(strs, reverse = True)", sorted(strs, reverse = True));time.sleep(0.1)
+    print ("sorted(strs) = ", sorted(strs));time.sleep(0.1) ##(case sensitive)
+    print ("sorted(strs, reverse = True) = ", sorted(strs, reverse = True));time.sleep(0.1)
+    strs2 = ['ccc', 'aaaa', 'd', 'bb']
+    print ("sorted(strs2, key = len) = ", sorted(strs2, key = len));time.sleep(0.1)
+    ## "key" argument specifying str.lower function to use for sorting
+    print ("sorted(strs2, key = str.lower) = ", sorted(strs2, key = str.lower));time.sleep(0.1)
+    ## Say we have a list of strings we want to sort by the last letter of the string.
+    strs3 = ['xc', 'zb', 'yd' ,'wa']
+    ## Write a little function that takes a string, and returns its last letter.
+    ## This will be the key function (takes in 1 value, returns 1 value).
+    def MyFn(s):
+        return s[-1]
+    ## Now pass key=MyFn to sorted() to sort by the last letter:
+    print ("sorted(strs3, key = MyFn) = ", sorted(strs3, key = MyFn));time.sleep(0.1)
 
 #printStatements1()
 #myInputTests()
