@@ -255,6 +255,14 @@ def stuffIfound():
     print(True if (round(1/3 + 2/3,5) == round(0.999999,5)) else False)  #false H:true
     print(True if (round(1/3 + 2/3,5) == round(1,5)) else False)  #true H:false
 
+def video23video25():
+    name = "Link"
+    sex = "Male"
+    max_hit_points = 50
+    current_hit_points = 50
+    def display_character(name, sex, max_hit_points, current_hit_points):
+        print(name, sex)
+
 #printStatements1()
 #myInputTests()
 #printStatements2()
