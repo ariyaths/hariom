@@ -261,7 +261,20 @@ def video23video25():
     max_hit_points = 50
     current_hit_points = 50
     def display_character(name, sex, max_hit_points, current_hit_points):
-        print(name, sex)
+        print(name, sex, max_hit_points, current_hit_points)
+    display_character(name, sex, max_hit_points, current_hit_points)
+
+def tables():
+    ###learnt this from khanacademy and tutorialspoint
+    a = 1
+    b = 1
+    c = 0
+    while(b < 11):
+        print((a," * ", b," = "), a * b);time.sleep(0.1)
+        b = b + 1
+        if(b == 11):
+            a = a + 1
+            b = c
 
 #printStatements1()
 #myInputTests()
@@ -269,4 +282,6 @@ def video23video25():
 #video14video16(3,4)
 #video17video19()
 #video20video22()
-stuffIfound()
+#stuffIfound()
+#video23video25()
+tables()
