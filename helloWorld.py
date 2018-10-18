@@ -255,19 +255,6 @@ def stuffIfound():
     print(True if (round(1/3 + 2/3,5) == round(0.999999,5)) else False)  #false H:true
     print(True if (round(1/3 + 2/3,5) == round(1,5)) else False)  #true H:false
 
-def video23video25():
-    ###very important video
-    ###object oriented programming
-    ## the wrong way
-    name = "Link"
-    sex = "Male"
-    max_hit_points = 50
-    current_hit_points = 50
-    def display_character(name, sex, max_hit_points, current_hit_points):
-        print(name, sex, max_hit_points, current_hit_points)
-    display_character(name, sex, max_hit_points, current_hit_points)
-    ## the right way
-
 def tables():
     ###learnt this from khanacademy and tutorialspoint
     a = 1
@@ -280,6 +267,20 @@ def tables():
             a = a + 1
             b = c
 
+def video23video25():
+    ###very important video
+    ###object oriented programming
+    ###getting something out of someone is called "inheritence"
+    ## the wrong way
+    name = "Link"
+    sex = "Male"
+    max_hit_points = 50
+    current_hit_points = 50
+    def display_character(name, sex, max_hit_points, current_hit_points):
+        print(name, sex, max_hit_points, current_hit_points)
+    display_character(name, sex, max_hit_points, current_hit_points)
+    ## the right way
+
 class Character():
     def __init__(self, name):
         self.name2 = name
@@ -289,7 +290,28 @@ class Character():
 John = Character(name = "John")
 John.running()
 Mary = Character("Mary")
-Mary.running()            
+Mary.running()
+
+class Person():
+    def __init__(self, name, score):
+        self.name4 = name
+        self.score2 = score
+    def info(self):
+        print("I am {} and I have {}".format(self.name4, self.score2))
+
+class Mary2(Person):
+    def __init__(self, name, score):
+        self.name5 = name
+        self.score3 = score
+mary2 = Mary2("Mary", 4555)
+mary2.info()
+
+class John2(Person):
+    def __init__(self, name, score):
+        self.name5 = name
+        self.score3 = score
+john2 = John2("John", 4555)
+john2.info()
 
 #printStatements1()
 #myInputTests()
