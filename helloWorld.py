@@ -256,6 +256,9 @@ def stuffIfound():
     print(True if (round(1/3 + 2/3,5) == round(1,5)) else False)  #true H:false
 
 def video23video25():
+    ###very important video
+    ###object oriented programming
+    ## the wrong way
     name = "Link"
     sex = "Male"
     max_hit_points = 50
@@ -263,6 +266,7 @@ def video23video25():
     def display_character(name, sex, max_hit_points, current_hit_points):
         print(name, sex, max_hit_points, current_hit_points)
     display_character(name, sex, max_hit_points, current_hit_points)
+    ## the right way
 
 def tables():
     ###learnt this from khanacademy and tutorialspoint
@@ -270,11 +274,22 @@ def tables():
     b = 1
     c = 0
     while(b < 11):
-        print((a," * ", b," = "), a * b);time.sleep(0.1)
+        print(a, " * ", b, " = ", a * b);time.sleep(0.1)
         b = b + 1
         if(b == 11):
             a = a + 1
             b = c
+
+class Character():
+    def __init__(self, name):
+        self.name2 = name
+    def running(self):
+        print("{} is running".format(self.name2))
+
+John = Character(name = "John")
+John.running()
+Mary = Character("Mary")
+Mary.running()            
 
 #printStatements1()
 #myInputTests()
