@@ -264,8 +264,9 @@ def tables():
         print(a, " * ", b, " = ", a * b);time.sleep(0.1)
         b = b + 1
         if(b == 11):
-            a = a + 1
-            b = c
+            if(a < 20):
+                a = a + 1
+                b = c
 
 def video23video25():
     ###very important video
@@ -286,7 +287,6 @@ class Character():
         self.name2 = name
     def running(self):
         print("{} is running".format(self.name2))
-
 John = Character(name = "John")
 John.running()
 Mary = Character("Mary")
@@ -301,15 +301,15 @@ class Person():
 
 class Mary2(Person):
     def __init__(self, name, score):
-        self.name5 = name
-        self.score3 = score
+        self.name4 = name
+        self.score2 = score
 mary2 = Mary2("Mary", 4555)
 mary2.info()
 
 class John2(Person):
     def __init__(self, name, score):
-        self.name5 = name
-        self.score3 = score
+        self.name4 = name
+        self.score2 = score
 john2 = John2("John", 4555)
 john2.info()
 
