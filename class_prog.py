@@ -1,18 +1,18 @@
 import math
 import collections
-import os
 import turtle as t
+
+
+# def path(filename):
+#     import os
+#     filepath = os.path.realpath(__file__)
+#     dirpath = os.path.dirname(filepath)
+#     fullpath = os.path.join(dirpath, filepath)
+#     return fullpath
 
 
 def floor(value, size, offset=200):
     return float(((value + offset) // size) * size - offset)
-
-
-def path(filename):
-    filepath = os.path.realpath(__file__)
-    dirpath = os.path.dirname(filepath)
-    fullpath = os.path.join(dirpath, filepath)
-    return fullpath
 
 
 def line(a, b, x, y):
