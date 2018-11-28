@@ -1,7 +1,7 @@
 import math
 import collections
 import turtle as t
-
+    
 
 # def path(filename):
 #     import os
@@ -71,6 +71,7 @@ class vector(collections.Sequence):
         if self._hash is None:
             pair = (self.x, self.y)
             self._hash = hash(pair)
+        return self._hash  #SUJIT: I added this missing line
 
     def __len__(self):
         return 2
