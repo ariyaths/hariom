@@ -3,12 +3,12 @@ import collections
 import turtle as t
     
 
-# def path(filename):
-#     import os
-#     filepath = os.path.realpath(__file__)
-#     dirpath = os.path.dirname(filepath)
-#     fullpath = os.path.join(dirpath, filepath)
-#     return fullpath
+def path(filename):
+    import os
+    filepath = os.path.realpath(__file__)
+    dirpath = os.path.dirname(filepath)
+    fullpath = os.path.join(dirpath, filename)
+    return fullpath
 
 
 def floor(value, size, offset=200):
