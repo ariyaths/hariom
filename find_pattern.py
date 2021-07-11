@@ -340,6 +340,29 @@ def faster_frequent_words(dna_data2, k):
 print(faster_frequent_words("TACGTACGTACGTCGTTACG", 3))#read_dna(WORKFILE_1), 3))
 
 
+def create_dna(length):
+    """
+    
+
+    Parameters
+    ----------
+    length : int
+        length of DNA.
+    count : int, optional
+        how many DNAs to generate. The default is 1.
+
+    Returns
+    -------
+    list
+        list of DNAs.
+
+    """
+    import random
+    
+    dna = "".join([random.choice("ACTG") for i in range(length)])
+    
+    return dna
+    
 def frequency_table(dnadata, k, sorted_list=False, remove_small_values = False):
     """
     
@@ -388,6 +411,35 @@ def frequency_table(dnadata, k, sorted_list=False, remove_small_values = False):
         return l, max(freqdict_r.values())
     
     return freqdict
+
+def multiple_frequency_tables(dnadata, k, sorted_list=False, remove_small_values = False):
+    freqdict = {}
+    
+    for dna in dnadata.values():
+        for i in range(len(dna)):
+            kmer = dna[i:i+k]
+    
+            if kmer in freqdict:
+                freqdict[kmer] += 1
+                
+            else:
+                freqdict[kmer] = 1
+                
+    freqdict_r = {kmer:count for kmer,count in freqdict.items() if count > 1}    
+
+    if sorted_list:
+        
+        if remove_small_values:
+            return sorted(freqdict_r)
+        
+        return sorted(freqdict)
+    
+    if remove_small_values:
+        l = [k for k,v in freqdict_r.items() if v == max(freqdict_r.values())]
+        print(freqdict_r)
+        return l, max(freqdict_r.values())
+
+    return freqdict    
 
 # print(frequency_table(read_dna(WORKFILE_0), 9))
 
