@@ -340,20 +340,53 @@ def faster_frequent_words(dna_data2, k):
 print(faster_frequent_words("TACGTACGTACGTCGTTACG", 3))#read_dna(WORKFILE_1), 3))
 
 
-def frequency_table(dnadata, k, sorted_list=False):
-    freqdict = {i: 0 for i in nucleotide_combinations_list(k)}
+def frequency_table(dnadata, k, sorted_list=False, remove_small_values = False):
+    """
+    
+
+    Parameters
+    ----------
+    dnadata : str
+        A dna sequence.
+    k : int
+        length if k-mer.
+    sorted_list : bool, optional
+        If sorted_list, output is sorted. The default is False.
+    remove_small_values : bool, optional
+        If remove_small_values, output does not have values less than two. The default is False.
+
+    Returns
+    -------
+    dict
+        dict of {k-mer:count}.
+
+    """
+    freqdict = {}
 
     for i in range(len(dnadata) -k +1):
         kmer = dnadata[i:i+k]
 
-        if kmer in freqdict.keys() :
+        try:
             freqdict[kmer] += 1
-        else:
-            freqdict[kmer] = 0
+            
+        except KeyError:
+            freqdict[kmer] = 1
+
+    # Removing all kmers that map to 0 or 1
+    freqdict_r = {kmer:count for kmer,count in freqdict.items() if count > 1}    
 
     if sorted_list:
+        
+        if remove_small_values:
+            return sorted(freqdict_r)
+        
         return sorted(freqdict)
-
+    
+    if remove_small_values:
+        l = [k for k,v in freqdict_r.items() if v == max(freqdict_r.values())]
+        print(freqdict_r)
+        return l, max(freqdict_r.values())
+    
     return freqdict
 
 # print(frequency_table(read_dna(WORKFILE_0), 9))
